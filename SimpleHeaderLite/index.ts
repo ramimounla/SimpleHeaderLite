@@ -2,6 +2,7 @@ import {IInputs, IOutputs} from "./generated/ManifestTypes";
 
 export class SimpleHeaderLite implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 
+	private _divHeader: HTMLDivElement;
 	/**
 	 * Empty constructor.
 	 */
@@ -21,6 +22,16 @@ export class SimpleHeaderLite implements ComponentFramework.StandardControl<IInp
 	public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container:HTMLDivElement)
 	{
 		// Add control initialization code
+		this._divHeader = document.createElement("div");
+		this._divHeader.innerText = context.parameters.headerText.raw + "";
+
+		var style: string;
+		style = "";
+		
+		if(((context.parameters.css.raw + "").trim().length > 0))
+			this._divHeader.style.cssText =context.parameters.css.raw + "";
+
+			container.appendChild(this._divHeader);
 	}
 
 

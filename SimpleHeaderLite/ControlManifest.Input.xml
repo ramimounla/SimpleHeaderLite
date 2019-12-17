@@ -2,7 +2,9 @@
 <manifest>
   <control namespace="XrmEnterprise" constructor="SimpleHeaderLite" version="0.0.1" display-name-key="SimpleHeaderLite" description-key="SimpleHeaderLite description" control-type="standard">
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
-    <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="info" display-name-key="WhatEver" description-key="Text to appear in header" usage="bound" of-type="SingleLine.Text" required="true" default-value="Header" />
+    <property name="headerText" display-name-key="Header Text" description-key="Text to appear in header" usage="input" of-type="SingleLine.Text" required="true" default-value="Header" />
+    <property name="css" display-name-key="Header CSS" description-key="Header div inline CSS to be applied" usage="input" of-type="SingleLine.Text" required="false" default-value="#FFF" />
     <!-- 
       Property node's of-type attribute can be of-type-group attribute. 
       Example:
