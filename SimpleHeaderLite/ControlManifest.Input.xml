@@ -2,9 +2,15 @@
 <manifest>
   <control namespace="XrmEnterprise" constructor="SimpleHeaderLite" version="0.0.1" display-name-key="SimpleHeaderLite" description-key="SimpleHeaderLite description" control-type="standard">
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
-    <property name="info" display-name-key="WhatEver" description-key="Text to appear in header" usage="bound" of-type="SingleLine.Text" required="true" default-value="Header" />
+    <property name="info" display-name-key="info" description-key="This control is unbound, this input does not make a difference." usage="bound" of-type="SingleLine.Text" required="true" default-value="Header" />
     <property name="headerText" display-name-key="Header Text" description-key="Text to appear in header" usage="input" of-type="SingleLine.Text" required="true" default-value="Header" />
-    <property name="css" display-name-key="Header CSS" description-key="Header div inline CSS to be applied" usage="input" of-type="SingleLine.Text" required="false" default-value="#FFF" />
+    <property name="fontColor" display-name-key="Font Color" description-key="Head front color" usage="input" of-type="SingleLine.Text" required="false" default-value="#FFF" />
+    <property name="font" display-name-key="Font" description-key="Header font type" usage="input" of-type="SingleLine.Text" required="false" default-value="'SegoeUI-Semibold', 'Segoe UI Semibold', 'Segoe UI Regular', 'Segoe UI'"/>
+    <property name="fontSize" display-name-key="Font Size" description-key="Header font size" usage="input" of-type="SingleLine.Text" required="false" default-value="1.2rem"/>
+    <property name="backgroundColor" display-name-key="Background Color" description-key="Header Background Color" usage="input" of-type="SingleLine.Text" required="false" default-value="#000"/>
+    <property name="padding" display-name-key="Padding" description-key="Header Text Padding" usage="input" of-type="SingleLine.Text" required="false" default-value="5px"/>
+
+
     <!-- 
       Property node's of-type attribute can be of-type-group attribute. 
       Example:
