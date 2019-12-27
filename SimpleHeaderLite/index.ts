@@ -23,7 +23,7 @@ export class SimpleHeaderLite implements ComponentFramework.StandardControl<IInp
 		this._divHeader = document.createElement("div");
 		this._divHeader.innerText = context.parameters.headerText.raw || "";
 
-		this._divHeader.style.fontFamily = context.parameters.font.raw || "";
+		this._divHeader.style.fontFamily = context.parameters.fontFamily.raw || "";
 		this._divHeader.style.color = context.parameters.fontColor.raw || "";
 		this._divHeader.style.backgroundColor = context.parameters.backgroundColor.raw || "";
 		this._divHeader.style.padding = context.parameters.padding.raw || "";
