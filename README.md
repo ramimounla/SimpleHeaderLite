@@ -1,8 +1,16 @@
 # SimpleHeaderLite
 A fork from the SimpleHeader PCF Control that does not require as much knowledge CSS. The one input CSS style is replaced by a a few input to define the different possible style variations.
 
+# Screenshots
+![Header PCF control with one line CSS input](https://github.com/ramimounla/SimpleHeaderLite/blob/master/Screenshot/SimpleHeaderLite.png?raw=true)
+
+## Configuration
+![Header PCF control with one line CSS input](https://github.com/ramimounla/SimpleHeaderLite/blob/master/Screenshot/SimpleHeaderLiteConfiguration.png?raw=true)
+
 # Instructions
-1. Clone the repository
-2. run ```npm install``` to resolve all dependencies
-3. run ```npm run build``` to build the project
-4. run ```npm start``` to test the project locally
+Clone the respository then run the following commands
+```
+PM> npm install
+PM> npm run build
+PM> npm start
+```
